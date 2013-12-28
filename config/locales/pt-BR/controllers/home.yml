@@ -5,8 +5,8 @@ pt-BR:
       level: "Grau"
       student: "Aluno"
       teacher: "Professor"
-      subject: "Materia"
-      period: "Periodo"
+      subject: "Matéria"
+      period: "Período"
       sublevel: "Turma"
       links:
         classroom: "Criar Aula"
