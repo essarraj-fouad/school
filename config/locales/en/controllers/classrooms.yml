@@ -4,3 +4,18 @@ en:
       title: "Classrooms"
       level: "Level"
       sublevel: "Sublevel"
+      home: "Home"
+      levels:
+        - Kindergarten
+        - First grade
+        - Second grade
+        - Third grade
+        - Fourth grade
+        - Fifth grade
+        - Sixth grade
+        - Seventh grade
+        - Eighth grade
+        - Ninth grade
+        - Tenth grade
+        - Eleventh grade
+        - Twelfth grade
