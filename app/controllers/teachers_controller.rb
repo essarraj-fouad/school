@@ -1,12 +1,12 @@
 class TeachersController < ApplicationController
   def new
     @teacher = Teacher.new
+    @teacher.subjects.build
     @classrooms = Classroom.all
   end
 
   def create
     @teacher = Teacher.new(teacher_params)
-    @teacher.subjects.new(:name => params[:subjects][:name])
     if @teacher.save
       flash[:notice] = "Teacher saved"
       redirect_to root_path
@@ -15,6 +15,6 @@ class TeachersController < ApplicationController
 
   private
   def teacher_params
-    params.require(:teacher).permit(:name, :classroom_id)
+    params.require(:teacher).permit(:name, :classroom_id, subjects_attributes: [:id, :name])
   end
 end
