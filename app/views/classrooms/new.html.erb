@@ -1,12 +1,12 @@
 <h1><%= t('.title') %></h1>
 
 <%= form_for @classroom do |f| %>
-  <%= t('.level') %>: <%= f.text_field :level %>
+  <%= t('.level') %>: <%= f.select :level, t('.levels') %>
   <%= t('.sublevel') %>: <%= f.select :sublevel, ("A".."Z").to_a %>
   <%= f.submit %>
 <% end %>
 
 <p>
-<%= link_to "Home", root_path %>
+<%= link_to t('.home'), root_path %>
 </p>
 

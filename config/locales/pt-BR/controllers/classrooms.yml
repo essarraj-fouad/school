@@ -1,6 +1,20 @@
 pt-BR:
   classrooms:
     new:
-      title: "Aulas"
+      title: "Classes"
       level: "Grau"
       sublevel: "Turma"
+      home: "Inicio"
+      levels:
+        - Primeira Série
+        - Segunda Série
+        - Terceira Série
+        - Quarta Série
+        - Quinta Série
+        - Sexta Série
+        - Sétima Série
+        - Oitava Série
+        - Nona Série
+        - Primeiro Colegial
+        - Segundo Colegial
+        - Terceiro Colegial

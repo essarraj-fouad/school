@@ -3,8 +3,9 @@ pt-BR:
     new:
       title: "Alunos"
       name: "Nome"
-      classroom: "Aula"
+      classroom: "Grau"
       period: "Periodo"
+      home: "Inicio"
       periods:
         - "Manhã"
         - "Tarde"

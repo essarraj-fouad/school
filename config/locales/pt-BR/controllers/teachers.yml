@@ -3,8 +3,9 @@ pt-BR:
     new:
       title: "Professores"
       name: "Nome"
-      classroom: "Aula"
-      subject: "Materia"
+      classroom: "Grau"
+      subject: "Matéria"
+      home: "Inicio"
       subjects:
         - Português
         - Matemática

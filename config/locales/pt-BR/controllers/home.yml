@@ -1,14 +1,14 @@
 pt-BR:
   home:
     index:
-      title: "Home"
+      title: "Lista de Alunos e Professores"
       level: "Grau"
-      student: "Aluno"
-      teacher: "Professor"
-      subject: "Matéria"
+      student: "Alunos"
+      teacher: "Professores"
+      subject: "Matérias"
       period: "Período"
       sublevel: "Turma"
       links:
-        classroom: "Criar Aula"
-        student: "Criar Aluno"
-        teacher: "Criar Professor"
+        classroom: "Adicionar Classes"
+        student: "Adicionar Aluno"
+        teacher: "Adicionar Professor"
