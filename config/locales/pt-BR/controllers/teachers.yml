@@ -5,3 +5,15 @@ pt-BR:
       name: "Nome"
       classroom: "Aula"
       subject: "Materia"
+      subjects:
+        - Português
+        - Matemática
+        - Historia
+        - Geografia
+        - Ciências
+        - Física
+        - Química
+        - Educação Artística
+        - Educação Física
+        - Psicologia
+        - Inglés

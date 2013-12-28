@@ -4,7 +4,7 @@
   <%= t('.name') %>: <%= f.text_field :name %>
   <%= t('.classroom') %>: <%= f.collection_select :classroom_id, @classrooms, :id, :level, prompt: true %>
   <%= f.fields_for :subjects do |p| %>
-    <%= t('.subject') %>: <%= p.select :name, ["Math", "Science", "Physics"] %>
+    <%= t('.subject') %>: <%= p.select :name, t('.subjects') %>
   <% end %>
   <%= f.submit %>
 <% end %>

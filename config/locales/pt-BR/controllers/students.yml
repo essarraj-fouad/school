@@ -6,6 +6,6 @@ pt-BR:
       classroom: "Aula"
       period: "Periodo"
       periods:
-        day: "Dia"
-        afternoon: "Tarde"
-        night: "Noite"
+        - "Manhã"
+        - "Tarde"
+        - "Noite"

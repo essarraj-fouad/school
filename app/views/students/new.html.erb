@@ -3,7 +3,7 @@
 <%= form_for @student do |f| %>
   <%= t('.name') %>: <%= f.text_field :name %>
   <%= t('.classroom') %>: <%= f.collection_select :classroom_id, @classrooms, :id, :level, prompt: true %>
-  <%= t('.period') %>: <%= f.select :period, [t('.periods.day'), t('.periods.afternoon'), t('.periods.night')] %>
+  <%= t('.period') %>: <%= f.select :period, t('.periods') %>
   <%= f.submit %>
 <% end %>
 
