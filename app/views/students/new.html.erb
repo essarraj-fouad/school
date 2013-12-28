@@ -2,7 +2,7 @@
 
 <%= form_for @student do |f| %>
   Name: <%= f.text_field :name %>
-  Classroom: <%= f.collection_select :classroom_id, Classroom.all, :id, :level, prompt: true %>
+  Classroom: <%= f.collection_select :classroom_id, @classrooms, :id, :level, prompt: true %>
   Period: <%= f.select :period, ["Day", "Night"] %>
   <%= f.submit %>
 <% end %>
