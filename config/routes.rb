@@ -1,7 +1,10 @@
 School::Application.routes.draw do
+  get "home/index"
   resources :classrooms
   resources :teachers
   resources :students
+
+  root "home#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

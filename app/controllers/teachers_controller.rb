@@ -8,7 +8,7 @@ class TeachersController < ApplicationController
     @teacher.subjects.new(:name => params[:subjects][:name])
     if @teacher.save
       flash[:notice] = "Teacher saved"
-      redirect_to new_teacher_path
+      redirect_to root_path
     end
   end
 

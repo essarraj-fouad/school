@@ -1,0 +1,49 @@
+<h1>Home</h1>
+
+<p>
+<%= flash[:notice] %>
+</p>
+
+<% @classrooms.each do |classroom| %>
+  <h2><%= classroom.sublevel%></h2>
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Student</th>
+      <th>Teacher</th>
+      <th>Subject</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+	<%= classroom.level%>
+      </td>
+      <td>
+	<% classroom.students.each do |student|%>
+	  <p>
+	    <%= student.name %>
+	  </p>
+	<% end %>
+      </td>
+      <td>
+      <% classroom.teachers.each do |teacher|%>
+	<p>
+	  <%= teacher.name %>
+	</p>
+      <% end %>
+    </td>
+    <td>
+      <% classroom.teachers.each do |teacher|%>
+      <% teacher.subjects.each do |subject| %>
+	<p>
+      <%= subject.name %>
+      </p>
+    <% end %>
+    <% end %>
+    </td>
+    </tr>
+  </tbody>
+</table>
+<% end %>

@@ -7,7 +7,7 @@ class ClassroomsController < ApplicationController
     @classroom = Classroom.new(classroom_params)
     if @classroom.save
       flash[:notice] = "Classroom saved"
-      redirect_to new_classroom_path
+      redirect_to root_path
     end
   end
 

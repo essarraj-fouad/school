@@ -7,7 +7,7 @@ class StudentsController < ApplicationController
     @student = Student.new(student_params)
     if @student.save
       flash[:notice] = "Student saved"
-      redirect_to new_student_path
+      redirect_to root_path
     end
   end
 
