@@ -1,0 +1,11 @@
+en:
+  students:
+    new:
+      title: "Students"
+      name: "Name"
+      classroom: "Classroom"
+      period: "Period"
+      periods:
+        - "Day"
+        - "Afternoon"
+        - "Night"

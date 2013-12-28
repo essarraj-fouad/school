@@ -1,0 +1,28 @@
+en:
+  teachers:
+    new:
+      title: "Teachers"
+      name: "Name"
+      classroom: "Classroom"
+      subject: "Subject"
+      subjects:
+        - "Art"
+        - "Biography"
+        - "Business Studies"
+        - "Citizenship"
+        - "Design And Technology"
+        - "Drama"
+        - "English"
+        - "Geography"
+        - "History"
+        - "Information and Communication Technology (ICT)"
+        - "Languages"
+        - "Maths"
+        - "Modern Studies"
+        - "Music"
+        - "PE: Physical Education"
+        - "PSHE: Personal, Social and Health Education (PSHE)"
+        - "RE: Religious Education"
+        - "Science"
+        - "Study Skills"
+
