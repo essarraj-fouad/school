@@ -2,7 +2,7 @@
 
 <%= form_for @classroom do |f| %>
   Level: <%= f.text_field :level %>
-  Sublevel: <%= f.text_field :sublevel %>
+  Sublevel: <%= f.select :sublevel, ("A".."Z").to_a %>
   <%= f.submit %>
 <% end %>
 
