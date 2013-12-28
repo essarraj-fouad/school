@@ -1,0 +1,6 @@
+pt-BR:
+  activerecord:
+    models:
+      classroom: "Classe"
+      student: "Aluno"
+      teacher: "Professor"
