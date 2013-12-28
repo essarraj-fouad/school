@@ -1,0 +1,11 @@
+en:
+  flash:
+    classrooms:
+      create:
+        notice: "Classroom saved"
+    students:
+      create:
+        notice: "Student saved"
+    teachers:
+      create:
+        notice: "Teacher saved"
