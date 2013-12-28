@@ -1,9 +1,9 @@
-<h1>Students</h1>
+<h1><%= t('.title') %></h1>
 
 <%= form_for @student do |f| %>
-  Name: <%= f.text_field :name %>
-  Classroom: <%= f.collection_select :classroom_id, @classrooms, :id, :level, prompt: true %>
-  Period: <%= f.select :period, ["Day", "Night"] %>
+  <%= t('.name') %>: <%= f.text_field :name %>
+  <%= t('.classroom') %>: <%= f.collection_select :classroom_id, @classrooms, :id, :level, prompt: true %>
+  <%= t('.period') %>: <%= f.select :period, [t('.periods.day'), t('.periods.afternoon'), t('.periods.night')] %>
   <%= f.submit %>
 <% end %>
 

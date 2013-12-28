@@ -1,8 +1,8 @@
-<h1>Classrooms</h1>
+<h1><%= t('.title') %></h1>
 
 <%= form_for @classroom do |f| %>
-  Level: <%= f.text_field :level %>
-  Sublevel: <%= f.select :sublevel, ("A".."Z").to_a %>
+  <%= t('.level') %>: <%= f.text_field :level %>
+  <%= t('.sublevel') %>: <%= f.select :sublevel, ("A".."Z").to_a %>
   <%= f.submit %>
 <% end %>
 

@@ -1,19 +1,19 @@
-<h1>Home</h1>
+<h1><%= t('.title') %></h1>
 
 <p>
 <%= flash[:notice] %>
 </p>
 
 <% @classrooms.each do |classroom| %>
-<h2><%= classroom.sublevel%></h2>
+<h2><%= t('.sublevel') %> <%= classroom.sublevel%></h2>
 <table>
   <thead>
     <tr>
-      <th>Level</th>
-      <th>Student</th>
-      <th>Teacher</th>
-      <th>Subject</th>
-      <th>Period</th>
+      <th><%= t('.level') %></th>
+      <th><%= t('.student') %></th>
+      <th><%= t('.teacher') %></th>
+      <th><%= t('.subject') %></th>
+      <th><%= t('.period') %></th>
     </tr>
   </thead>
   <tbody>
@@ -55,10 +55,10 @@
 <% end %>
 
 <p>
-<%= link_to "Create Classroom", new_classroom_path %>
+<%= link_to t('.links.classroom'), new_classroom_path %>
 <br>
-<%= link_to "Create Student", new_student_path %>
+<%= link_to t('.links.student'), new_student_path %>
 <br>
-<%= link_to "Create Teacher", new_teacher_path %>
+<%= link_to t('.links.teacher'), new_teacher_path %>
 </p>
 

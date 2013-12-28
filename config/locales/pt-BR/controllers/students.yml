@@ -1,0 +1,11 @@
+pt-BR:
+  students:
+    new:
+      title: "Alunos"
+      name: "Nome"
+      classroom: "Aula"
+      period: "Periodo"
+      periods:
+        day: "Dia"
+        afternoon: "Tarde"
+        night: "Noite"

@@ -1,0 +1,7 @@
+pt-BR:
+  teachers:
+    new:
+      title: "Professores"
+      name: "Nome"
+      classroom: "Aula"
+      subject: "Materia"
