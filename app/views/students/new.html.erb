@@ -1,7 +1,8 @@
 <h1>Students</h1>
 
 <%= form_for @student do |f| %>
-  <%= f.text_field :name %>
-  <%= f.collection_select :classroom_id, Classroom.all, :id, :level, prompt: true %>
+  Name: <%= f.text_field :name %>
+  Classroom: <%= f.collection_select :classroom_id, Classroom.all, :id, :level, prompt: true %>
+  <%= f.select :period, ["Day", "Night"] %>
   <%= f.submit %>
 <% end %>

@@ -5,7 +5,7 @@
 </p>
 
 <% @classrooms.each do |classroom| %>
-  <h2><%= classroom.sublevel%></h2>
+<h2><%= classroom.sublevel%></h2>
 <table>
   <thead>
     <tr>
@@ -13,37 +13,44 @@
       <th>Student</th>
       <th>Teacher</th>
       <th>Subject</th>
+      <th>Period</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>
-	<%= classroom.level%>
-      </td>
-      <td>
-	<% classroom.students.each do |student|%>
-	  <p>
-	    <%= student.name %>
-	  </p>
-	<% end %>
-      </td>
-      <td>
-      <% classroom.teachers.each do |teacher|%>
+  <tr>
+    <td>
+      <%= classroom.level%>
+    </td>
+    <td>
+      <% classroom.students.each do |student| %>
+	<p>
+	  <%= student.name %>
+	</p>
+      <% end %>
+    </td>
+    <td>
+      <% classroom.teachers.each do |teacher| %>
 	<p>
 	  <%= teacher.name %>
 	</p>
       <% end %>
     </td>
     <td>
-      <% classroom.teachers.each do |teacher|%>
-      <% teacher.subjects.each do |subject| %>
-	<p>
-      <%= subject.name %>
-      </p>
-    <% end %>
-    <% end %>
+      <% classroom.teachers.each do |teacher| %>
+	<% teacher.subjects.each do |subject| %>
+	  <p>
+	    <%= subject.name %>
+	  </p>
+	<% end %>
+      <% end %>
     </td>
-    </tr>
+    <td>
+      <% classroom.students.each do |student| %>
+	<%= student.period %>
+      <% end %>
+    </td>
+  </tr>
   </tbody>
 </table>
 <% end %>
+
