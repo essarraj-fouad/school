@@ -1,0 +1,11 @@
+pt-BR:
+  flash:
+    classrooms:
+      create:
+        notice: "Classe cadastrada com sucesso"
+    students:
+      create:
+        notice: "Aluno cadastrado com sucesso"
+    teachers:
+      create:
+        notice: "Professor cadastrado com sucesso"
