@@ -1,0 +1,8 @@
+<h1>Classrooms</h1>
+
+<%= form_for @classroom do |f| %>
+  Level: <%= f.text_field :level %>
+  Sublevel: <%= f.text_field :sublevel %>
+  <%= f.submit %>
+<% end %>
+
