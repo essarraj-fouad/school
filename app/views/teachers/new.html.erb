@@ -2,6 +2,9 @@
 
 <%= form_for @teacher do |f| %>
   Name: <%= f.text_field :name %>
-  <%= f.collection_select :classroom_id, Classroom.all, :id, :level, prompt: true %>
+  Classroom: <%= f.collection_select :classroom_id, Classroom.all, :id, :level, prompt: true %>
+  <%= fields_for :subjects do |p| %>
+    Subject: <%= p.select :name, [["Math"], ["Science"], ["Physics"]] %>
+  <% end %>
   <%= f.submit %>
 <% end %>
