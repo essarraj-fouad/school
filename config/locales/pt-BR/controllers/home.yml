@@ -10,5 +10,5 @@ pt-BR:
       sublevel: "Turma"
       links:
         classroom: "Adicionar Classes"
-        student: "Adicionar Aluno"
-        teacher: "Adicionar Professor"
+        student: "Adicionar Alunos"
+        teacher: "Adicionar Professores"
