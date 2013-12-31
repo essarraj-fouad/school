@@ -8,6 +8,8 @@ class ClassroomsController < ApplicationController
     if @classroom.save
       flash[:notice] = t('flash.classrooms.create.notice')
       redirect_to root_path
+    else
+      render :new
     end
   end
 
