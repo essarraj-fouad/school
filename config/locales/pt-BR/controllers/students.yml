@@ -6,7 +6,3 @@ pt-BR:
       classroom: "Grau"
       period: "Periodo"
       home: "Inicio"
-      periods:
-        - "Manhã"
-        - "Tarde"
-        - "Noite"

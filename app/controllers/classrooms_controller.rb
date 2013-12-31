@@ -15,6 +15,6 @@ class ClassroomsController < ApplicationController
 
   private
   def classroom_params
-    params.require(:classroom).permit(:level, :sublevel)
+    params.require(:classroom).permit(:level, :sublevel, :period)
   end
 end

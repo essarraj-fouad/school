@@ -3,6 +3,7 @@ class CreateClassrooms < ActiveRecord::Migration
     create_table :classrooms do |t|
       t.string :level
       t.string :sublevel
+      t.string :period
 
       t.timestamps
     end

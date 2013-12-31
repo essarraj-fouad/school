@@ -18,3 +18,7 @@ pt-BR:
         - Primeiro Colegial
         - Segundo Colegial
         - Terceiro Colegial
+      periods:
+        - "Manhã"
+        - "Tarde"
+        - "Noite"
