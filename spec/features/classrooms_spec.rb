@@ -1,8 +1,8 @@
 require "spec_helper"
 
-describe Classroom do
+describe "Classroom" do
   it "should create classrooms" do
-    visit "/classrooms/new"
+    visit new_classroom_path
     within("#new_classroom") do
       select("Primeira Série", from: "classroom_level")
       select("A", from: "classroom_sublevel")

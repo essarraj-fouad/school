@@ -1,8 +1,8 @@
 require "spec_helper"
 
-describe Student do
+describe "Student" do
   def create_classroom
-    visit "/classrooms/new"
+    visit new_classroom_path
     within("#new_classroom") do
       select("Primeira Série", from: "classroom_level")
       select("A", from: "classroom_sublevel")
@@ -14,7 +14,7 @@ describe Student do
 
   it "should create a student" do
     create_classroom
-    visit "/students/new"
+    visit new_student_path
     within("#new_student") do
       fill_in "student_name", with: "Diego Viola"
       select "Primeira Série", from: "student_classroom_id"
