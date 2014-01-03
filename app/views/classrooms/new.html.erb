@@ -2,7 +2,7 @@
 
 <%= form_for @classroom do |f| %>
   <%= t('.level') %>: <%= f.select :level, t('.levels') %>
-  <%= t('.sublevel') %>: <%= f.select :sublevel, ("A".."Z").to_a %>
+  <%= t('.sublevel') %>: <%= f.select :sublevel, "A".."Z" %>
   <%= t('.period') %>: <%= f.select :period, t('.periods') %>
   <%= f.submit %>
 <% end %>
