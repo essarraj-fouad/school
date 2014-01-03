@@ -2,6 +2,4 @@ pt-BR:
   students:
     new:
       title: "Alunos"
-      name: "Nome"
-      classroom: "Grau"
       home: "Inicio"

@@ -1,0 +1,15 @@
+pt-BR:
+  helpers:
+    label:
+      classroom:
+        level: "Grau"
+        sublevel: "Turma"
+        period: "Periodo"
+      student:
+        name: "Nome"
+        classroom: "Grau"
+      teacher:
+        name: "Nome"
+        classroom: "Grau"
+        subjects:
+          subject: "Matéria"

@@ -2,9 +2,6 @@ pt-BR:
   teachers:
     new:
       title: "Professores"
-      name: "Nome"
-      classroom: "Grau"
-      subject: "Matéria"
       home: "Inicio"
       subjects:
         - Português

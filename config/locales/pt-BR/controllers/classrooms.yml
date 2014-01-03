@@ -2,8 +2,6 @@ pt-BR:
   classrooms:
     new:
       title: "Classes"
-      level: "Grau"
-      sublevel: "Turma"
       home: "Inicio"
       levels:
         - Primeira Série
@@ -18,7 +16,6 @@ pt-BR:
         - Primeiro Colegial
         - Segundo Colegial
         - Terceiro Colegial
-      period: "Periodo"
       periods:
         - "Manhã"
         - "Tarde"
