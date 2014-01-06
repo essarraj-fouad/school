@@ -2,7 +2,6 @@ class TeachersController < ApplicationController
   def new
     @teacher = Teacher.new
     @teacher.subjects.build
-    @classrooms = Classroom.all
   end
 
   def create
@@ -10,6 +9,8 @@ class TeachersController < ApplicationController
     if @teacher.save
       flash[:notice] = t("flash.teachers.create.notice")
       redirect_to root_path
+    else
+      render :new
     end
   end
 

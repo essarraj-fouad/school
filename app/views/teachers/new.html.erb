@@ -2,7 +2,7 @@
 
 <%= form_for @teacher do |f| %>
   <%= f.label :name %>: <%= f.text_field :name %>
-  <%= f.label :classroom %>: <%= f.collection_select :classroom_id, @classrooms, :id, :level_with_sublevel, prompt: true %>
+  <%= f.label :classroom %>: <%= f.collection_select :classroom_id, Classroom.all, :id, :level_with_sublevel, prompt: true %>
   <%= f.fields_for :subjects do |p| %>
     <%= p.label :subject %>: <%= p.select :name, t('.subjects') %>
   <% end %>
