@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @classrooms = Classroom.order(:sublevel)
+    @classrooms = Classroom.all
   end
 end
