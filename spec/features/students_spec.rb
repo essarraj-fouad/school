@@ -1,20 +1,12 @@
 require "spec_helper"
 
 describe "Student" do
-  def create_classroom
-    visit new_classroom_path
-    within("#new_classroom") do
-      select("Primeira Série", from: "classroom_level")
-      select("A", from: "classroom_sublevel")
-      select "Tarde", from: "classroom_period"
-    end
-    click_on("Adicionar Classe")
-    expect(page).to have_content "Classe cadastrada com sucesso"
+  before do
+    Classroom.create(level: "Primeira Série", sublevel: "A", period: "Tarde")
+    visit new_student_path
   end
 
   it "should create a student" do
-    create_classroom
-    visit new_student_path
     within("#new_student") do
       fill_in "student_name", with: "Diego Viola"
       select "Primeira Série", from: "student_classroom_id"
