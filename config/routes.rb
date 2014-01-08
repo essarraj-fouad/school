@@ -1,8 +1,8 @@
 School::Application.routes.draw do
   get "home/index"
-  resources :classrooms
-  resources :teachers
-  resources :students
+  resources :classrooms, only: [:new, :create]
+  resources :teachers, only: [:new, :create]
+  resources :students, only: [:new, :create]
 
   root "home#index"
 
