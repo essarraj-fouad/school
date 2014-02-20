@@ -1,10 +1,8 @@
 en:
   classrooms:
     new:
-      title: "Classrooms"
-      level: "Level"
-      sublevel: "Sublevel"
-      home: "Home"
+      title: Classrooms
+      home: Home
       levels:
         - Kindergarten
         - First grade

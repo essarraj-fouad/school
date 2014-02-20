@@ -1,8 +1,8 @@
 pt-BR:
   classrooms:
     new:
-      title: "Classes"
-      home: "Inicio"
+      title: Classes
+      home: Inicio
       levels:
         - Primeira Série
         - Segunda Série
@@ -17,6 +17,6 @@ pt-BR:
         - Segundo Colegial
         - Terceiro Colegial
       periods:
-        - "Manhã"
-        - "Tarde"
-        - "Noite"
+        - Manhã
+        - Tarde
+        - Noite
