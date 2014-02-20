@@ -19,3 +19,7 @@ en:
         - Tenth grade
         - Eleventh grade
         - Twelfth grade
+      periods:
+        - Morning
+        - Afternoon
+        - Night
