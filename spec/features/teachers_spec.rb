@@ -8,7 +8,7 @@ describe "Student" do
 
   it "should create a teacher" do
     within("#new_teacher") do
-      fill_in "teacher_name", with: "Linus Torvalds"
+      fill_in "Name", with: "Linus Torvalds"
       select "Second grade", from: "teacher_classroom_id"
       select "Maths", from: "teacher_subjects_attributes_0_name"
     end

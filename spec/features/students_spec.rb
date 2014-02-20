@@ -8,7 +8,7 @@ describe "Student" do
 
   it "should create a student" do
     within("#new_student") do
-      fill_in "student_name", with: "Diego Viola"
+      fill_in "Name", with: "Diego Viola"
       select "Second grade", from: "student_classroom_id"
     end
     click_on("Create Student")
