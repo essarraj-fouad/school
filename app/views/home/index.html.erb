@@ -1,64 +1,64 @@
 <h1><%= t('.title') %></h1>
 
 <p>
-<%= flash[:notice] %>
+  <%= flash[:notice] %>
 </p>
 
 <% @classrooms.each do |classroom| %>
-<h2><%= t('.sublevel') %> <%= classroom.sublevel%></h2>
-<table>
-  <thead>
-    <tr>
-      <th><%= t('.level') %></th>
-      <th><%= t('.student') %></th>
-      <th><%= t('.teacher') %></th>
-      <th><%= t('.subject') %></th>
-      <th><%= t('.period') %></th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <%= classroom.level%>
-    </td>
-    <td>
-      <% classroom.students.each do |student| %>
-	<p>
-	  <%= student.name %>
-	</p>
-      <% end %>
-    </td>
-    <td>
-      <% classroom.teachers.each do |teacher| %>
-	<p>
-	  <%= teacher.name %>
-	</p>
-      <% end %>
-    </td>
-    <td>
-      <% classroom.teachers.each do |teacher| %>
-	<% teacher.subjects.each do |subject| %>
+  <h2><%= t('.sublevel') %> <%= classroom.sublevel%></h2>
+  <table>
+    <thead>
+      <tr>
+	<th><%= t('.level') %></th>
+	<th><%= t('.student') %></th>
+	<th><%= t('.teacher') %></th>
+	<th><%= t('.subject') %></th>
+	<th><%= t('.period') %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>
+	  <%= classroom.level%>
+	</td>
+	<td>
+	  <% classroom.students.each do |student| %>
+	    <p>
+	      <%= student.name %>
+	    </p>
+	  <% end %>
+	</td>
+	<td>
+	  <% classroom.teachers.each do |teacher| %>
+	    <p>
+	      <%= teacher.name %>
+	    </p>
+	  <% end %>
+	</td>
+	<td>
+	  <% classroom.teachers.each do |teacher| %>
+	    <% teacher.subjects.each do |subject| %>
+	      <p>
+		<%= subject.name %>
+	      </p>
+	    <% end %>
+	  <% end %>
+	</td>
+	<td>
 	  <p>
-	    <%= subject.name %>
+	    <%= classroom.period %>
 	  </p>
-	<% end %>
-      <% end %>
-    </td>
-    <td>
-      <p>
-      <%= classroom.period %>
-      </p>
-    </td>
-  </tr>
-  </tbody>
-</table>
+	</td>
+      </tr>
+    </tbody>
+  </table>
 <% end %>
 
 <p>
-<%= link_to t('.links.classroom'), new_classroom_path %>
-<br>
-<%= link_to t('.links.student'), new_student_path %>
-<br>
-<%= link_to t('.links.teacher'), new_teacher_path %>
+  <%= link_to t('.links.classroom'), new_classroom_path %>
+  <br>
+  <%= link_to t('.links.student'), new_student_path %>
+  <br>
+  <%= link_to t('.links.teacher'), new_teacher_path %>
 </p>
 
