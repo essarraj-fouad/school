@@ -1,11 +1,4 @@
-School::Application.routes.draw do
-  get "home/index"
-  resources :classrooms, only: [:new, :create]
-  resources :teachers, only: [:new, :create]
-  resources :students, only: [:new, :create]
-
-  root "home#index"
-
+Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
