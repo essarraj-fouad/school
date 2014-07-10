@@ -1,4 +1,5 @@
 class ClassroomsController < ApplicationController
+  before_action :authenticate_user!
   def new
     @classroom = Classroom.new
   end

@@ -1,4 +1,5 @@
 class TeachersController < ApplicationController
+  before_action :authenticate_user!
   def new
     @teacher = Teacher.new
     @teacher.subjects.build
