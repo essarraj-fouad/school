@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   get "home/index"
-  resources :classrooms, only: [:new, :create]
+  resources :classrooms
   resources :teachers, only: [:new, :create]
   resources :students, only: [:new, :create]
 

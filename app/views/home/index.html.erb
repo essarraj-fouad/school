@@ -52,6 +52,7 @@
       </tr>
     </tbody>
   </table>
+  <%= link_to "Delete", classroom_path(classroom), method: :delete, data: { confirm: "Are you sure?" } if current_user %>
 <% end %>
 
 <% if current_user %>

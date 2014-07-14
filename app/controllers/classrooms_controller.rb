@@ -14,6 +14,12 @@ class ClassroomsController < ApplicationController
     end
   end
 
+  def destroy
+    classroom = Classroom.find(params[:id])
+    classroom.destroy
+    redirect_to root_path, notice: "Classroom successfully deleted."
+  end
+
   private
   def classroom_params
     params.require(:classroom).permit(:level, :sublevel, :period)
