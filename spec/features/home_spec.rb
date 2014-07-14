@@ -1,6 +1,7 @@
 require "rails_helper"
 
 describe "Home" do
+  before { sign_up }
   it "should have links" do
     visit root_path
     within("#container") do

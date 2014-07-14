@@ -1,6 +1,7 @@
 require "rails_helper"
 
 describe "Classroom" do
+  before { sign_up }
   it "should create classrooms" do
     visit new_classroom_path
     within("#new_classroom") do

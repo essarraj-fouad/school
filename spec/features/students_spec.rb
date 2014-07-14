@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe "Student" do
   before do
+    sign_up
     Classroom.create(level: "Second grade", sublevel: "A", period: "Afternoon")
     visit new_student_path
   end
