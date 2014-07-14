@@ -4,10 +4,10 @@ describe "Student" do
   before do
     sign_up
     Classroom.create(level: "Second grade", sublevel: "A", period: "Afternoon")
-    visit new_student_path
   end
 
   it "should create a student" do
+    visit new_student_path
     within("#new_student") do
       fill_in "Name", with: "Diego Viola"
       select "Second grade", from: "student_classroom_id"

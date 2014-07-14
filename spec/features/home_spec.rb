@@ -8,6 +8,7 @@ describe "Home" do
       expect(page).to have_content "Create Classroom"
       expect(page).to have_content "Create Student"
       expect(page).to have_content "Create Teacher"
+      expect(page).to have_content "Sign out"
     end
   end
 end
