@@ -55,16 +55,14 @@
   <%= link_to "Delete", classroom_path(classroom), method: :delete, data: { confirm: "Are you sure?" } if current_user %>
 <% end %>
 
-<% if current_user %>
-  <ul>
+<ul>
+  <% if current_user %>
     <li><%= link_to t('.links.classroom'), new_classroom_path %></li>
     <li><%= link_to t('.links.student'), new_student_path %></li>
     <li><%= link_to t('.links.teacher'), new_teacher_path %></li>
     <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
-  </ul>
-<% else %>
-  <ul>
+  <% else %>
     <li><%= link_to "Sign up", new_user_registration_path %></li>
     <li><%= link_to "Sign in", new_user_session_path %></li>
-  </ul>
-<% end %>
+  <% end %>
+</ul>
