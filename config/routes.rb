@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :classrooms, only: [:new, :create, :destroy]
+  resources :classrooms, only: [:index, :new, :create, :destroy]
   resources :teachers, only: [:new, :create]
   resources :students, only: [:new, :create]
 

@@ -2,6 +2,12 @@ en:
   classrooms:
     index:
       title: Classrooms
+      level: "Level"
+      student: "Student"
+      teacher: "Teacher"
+      subject: "Subject"
+      period: "Period"
+      sublevel: "Sublevel"
       links:
         classroom: "Create Classroom"
         student: "Create Student"
