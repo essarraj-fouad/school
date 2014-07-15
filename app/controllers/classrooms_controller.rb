@@ -1,5 +1,10 @@
 class ClassroomsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: :index
+
+  def index
+    @classrooms = Classroom.all
+  end
+
   def new
     @classroom = Classroom.new
   end

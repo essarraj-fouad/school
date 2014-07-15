@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  get "home/index"
   resources :classrooms, only: [:new, :create, :destroy]
   resources :teachers, only: [:new, :create]
   resources :students, only: [:new, :create]
 
-  root "home#index"
+  root "classrooms#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,5 +1,11 @@
 en:
   classrooms:
+    index:
+      title: Classrooms
+      links:
+        classroom: "Create Classroom"
+        student: "Create Student"
+        teacher: "Create Teacher"
     new:
       title: Classrooms
       home: Home
