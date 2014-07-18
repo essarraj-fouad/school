@@ -9,8 +9,7 @@ class TeachersController < ApplicationController
   def create
     @teacher = Teacher.new(teacher_params)
     if @teacher.save
-      flash[:notice] = t("flash.teachers.create.notice")
-      redirect_to root_path
+      redirect_to root_path, notice: t("flash.teachers.create.notice")
     else
       render :new
     end

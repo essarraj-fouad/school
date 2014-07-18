@@ -12,8 +12,7 @@ class ClassroomsController < ApplicationController
   def create
     @classroom = Classroom.new(classroom_params)
     if @classroom.save
-      flash[:notice] = t('flash.classrooms.create.notice')
-      redirect_to root_path
+      redirect_to root_path, notice: t("flash.classrooms.create.notice")
     else
       render :new
     end
