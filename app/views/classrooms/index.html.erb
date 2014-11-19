@@ -9,46 +9,46 @@
   <table>
     <thead>
       <tr>
-	<th><%= t('.level') %></th>
-	<th><%= t('.student') %></th>
-	<th><%= t('.teacher') %></th>
-	<th><%= t('.subject') %></th>
-	<th><%= t('.period') %></th>
+        <th><%= t('.level') %></th>
+        <th><%= t('.student') %></th>
+        <th><%= t('.teacher') %></th>
+        <th><%= t('.subject') %></th>
+        <th><%= t('.period') %></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-	<td>
-	  <%= classroom.level%>
-	</td>
-	<td>
-	  <% classroom.students.each do |student| %>
-	    <p>
-	      <%= student.name %>
-	    </p>
-	  <% end %>
-	</td>
-	<td>
-	  <% classroom.teachers.each do |teacher| %>
-	    <p>
-	      <%= teacher.name %>
-	    </p>
-	  <% end %>
-	</td>
-	<td>
-	  <% classroom.teachers.each do |teacher| %>
-	    <% teacher.subjects.each do |subject| %>
-	      <p>
-		<%= subject.name %>
-	      </p>
-	    <% end %>
-	  <% end %>
-	</td>
-	<td>
-	  <p>
-	    <%= classroom.period %>
-	  </p>
-	</td>
+        <td>
+          <%= classroom.level%>
+        </td>
+        <td>
+          <% classroom.students.each do |student| %>
+            <p>
+              <%= student.name %>
+            </p>
+          <% end %>
+        </td>
+        <td>
+          <% classroom.teachers.each do |teacher| %>
+            <p>
+              <%= teacher.name %>
+            </p>
+          <% end %>
+        </td>
+        <td>
+          <% classroom.teachers.each do |teacher| %>
+            <% teacher.subjects.each do |subject| %>
+              <p>
+                <%= subject.name %>
+              </p>
+            <% end %>
+          <% end %>
+        </td>
+        <td>
+          <p>
+            <%= classroom.period %>
+          </p>
+        </td>
       </tr>
     </tbody>
   </table>
